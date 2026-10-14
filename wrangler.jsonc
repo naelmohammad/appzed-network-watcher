@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "appzed-network-watcher",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-14",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "appzed-network-watcher-meta"
+    }
+  ],
+  "triggers": {
+    "crons": ["0 * * * *"]
+  }
+}
